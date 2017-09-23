@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{$_modx->resource.pagetitle}</title>
+
+    <!--  GET FONTS  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!--    GET BOOTSTRAP 4 & jQUERY 3    -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/css/tether.min.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="col-xs-12 no-padding">
+        <div class="hidden-xs col-lg-1"></div>
+        <div class="col-xs-12 col-md-6 col-lg-2 no-padding" id="logo-outer">
+            <!--                <p id="logo">Kitcase</p>-->
+            <img id="logo" src="img/logo.png" alt="Kitcase. Чехлы для iPhone, Samsun Galaxy, Sony Xperia, HTC" class="img img-responsive">
+            <p class="logo-description">Производство чехлов</p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 header-outer no-padding" id="search-outer">
+            <div class="col-xs-12 no-padding">
+                <span class="phone">8 (495) 295-05-02</span>
+                <span class="socials-icon">
+                           <a href="/"><img src="img/insta.png" alt=""></a>
+                            <a href="/"><img src="img/vk.png" alt=""></a>
+                </span>
+            </div>
+            <div class="col-xs-12 no-padding">
+                <form action="" role="form">
+                    <div class="form-group">
+                        <input type="text" name="search" id="search" placeholder="Найти то, что нужно!" class="form-control">
+                        <button class="zoom-zoom" type="submit"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-9 col-lg-4 header-outer no-padding" id="header-menu-outer">
+            <a href="/" class="header-menu">Доставка</a>
+            <a href="/" class="header-menu">Контакты</a>
+            <a href="/" class="header-menu">Отзывы</a>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-1 header-outer no-padding" id="minicart">
+            <img src="img/cart2.png" alt="">
+            <span>2 850 р.</span>
+        </div>
+        <div class="hidden-xs col-lg-1"></div>
+    </header>
+    <div class="col-xs-12 no-padding" id="slider">
+        <div class="hidden-xs col-lg-1"></div>
+        <div id="garanties" class="col-xs-12 col-lg-2 no-padding">
+            <p class="garanties-descr">Мы вам гарантируем:</p>
+            <ul>
+                <li><i class="fa fa-thumbs-o-up"></i> Качество изделий</li>
+                <li><i class="fa fa-thumbs-o-up"></i> Низкие цены</li>
+                <li><i class="fa fa-thumbs-o-up"></i> Доставку вовремя</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-lg-8 no-padding" id="banner">
+            <ul class="bx-slider">
+                <li><img src="img/slider-example.jpg" alt="" class="img-fluid"></li>
+            </ul>
+        </div>
+        <div class="hidden-xs col-lg-1"></div>
+    </div>
+    <div class="col-xs-12 no-padding" id="nav">
+        <div class="hidden-xs col-lg-1"></div>
+        <div class="col-xs-12 col-lg-10 no-padding">
+            <button class="btn btn-nav">Чехлы для телефона</button>
+            <button class="btn btn-nav">Защитные пленки и стекла</button>
+            <button class="btn btn-nav">Зарядные устройства</button>
+            <button class="btn btn-nav">Наушники</button>
+            <h2 class="centered" id="make-choose">Выберите модель телефона</h2>
+            <div class="col-xs-12 col-lg-10 offset-lg-1" id="logos-outer">
+                <a href="/" class="phone-ico col-xs-12 col-md-6 col-lg-2">
+                    <img src="img/logos/apple.png" alt="" class="img img-fluid">
+                </a>
+                <a href="/" class="phone-ico col-xs-12 col-md-6 col-lg-2">
+                    <img src="img/logos/apple.png" alt="" class="img img-fluid">
+                </a>
+                <a href="/" class="phone-ico col-xs-12 col-md-6 col-lg-2">
+                    <img src="img/logos/apple.png" alt="" class="img img-fluid">
+                </a>
+                <a href="/" class="phone-ico col-xs-12 col-md-6 col-lg-2">
+                    <img src="img/logos/apple.png" alt="" class="img img-fluid">
+                </a>
+                <a href="/" class="phone-ico col-xs-12 col-md-6 col-lg-2">
+                    <img src="img/logos/apple.png" alt="" class="img img-fluid">
+                </a>
+                <a href="/" class="phone-ico col-xs-12 col-md-6 col-lg-2">
+                    <img src="img/logos/apple.png" alt="" class="img img-fluid">
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 no-padding" id="products-row">
+        <div class="col-xs-12 offset-lg-1 col-lg-11">
+            <h3 class="title">Популярные товары</h3>
+        </div>
+        <div class="hidden-xs col-lg-1"></div>
+        <div class="col-xs-12 col-lg-10">
+            <!--         product-rows      -->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 product-row">
+                <img src="img/product-ex.png" alt="{$pagetitle}" class="img-fluid product-img">
+                <h4 class="product-title">Накладка Kitcase для iPhone 5/5S/5SE</h4>
+                <div class="col-xs-12 col-md-6 col-lg-5 product-price no-padding">
+                    <span class="new_price">
+                            500 &#8381;
+                        </span>
+                    <span class="old_price">
+                            700 &#8381;
+                        </span>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-7 no-padding">
+                    <button class="btn btn-warning to-cart-btn">В корзину</button>
+                </div>
+            </div>
+
+            <!--                end of product-rows              -->
+        </div>
+        <div class="hidden-xs col-lg-1"></div>
+        <div class="col-xs-12 col-md-6 offset-md-3 col-lg-2 offset-lg-5">
+            <button class="btn btn-warning btn-more">Загрузить еще</button>
+        </div>
+    </div>
+    <footer class="col-xs-12 col-md-12 col-lg-10 offset-lg-1" id="mainfooter">
+        <div class="col-xs-12 col-md-6 col-lg-6" id="delivery">
+            <h3 class="title centered">Доставка и оплата</h3>
+            <div class="col-xs-12 card">
+                <h4>Доставка курьером по Москве</h4>
+                <p>Стоимость - 290 р.</p>
+                <p>Срок доставки от 1 до 2 дней (при условии наличия товара)</p>
+                <p>Способы оплаты: онлайн-оплата, наличными при получении</p>
+            </div>
+            <div class="col-xs-12 card">
+                <h4>Доставка почтой по России</h4>
+                <p>Стоимость - 290 р.</p>
+                <p>Срок доставки от 5 до 15 дней (в зависимости от удаленности вашего региона от Москвы)</p>
+                <p>Способы оплаты: онлайн-оплата</p>
+            </div>
+            <div class="col-xs-12 card">
+                <h4>Самовывоз</h4>
+                <p>Стоимость - 290 р.</p>
+                <p>Вы можете забрать заказ из нашего магазина в день заказа при условии наличия товара</p>
+                <p>Способы оплаты: онлайн оплата, наличными при получении, банковской картой при получении</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-6" id="reviews">
+            <h3 class="title centered">Отзывы о нас</h3>
+        </div>
+        <div class="col-xs-12" id="contacts-outer">
+            <div class="col-xs-12" id="contacts">
+                <h4 class="centered">Контакты</h4>
+                <div class="col-xs-12 col-md-4">
+                    <p>г. Москва</p>
+                    <p>Бульвар Дмитрия Донского, ТЦ "Североное сияние", 1 этаж</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <p>10:00 - 22:00 без выходных</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <p>Kitcase@ya.ru</p>
+                    <p>8 (495) 295-05-02</p>
+                </div>
+            </div>
+            <div class="col-xs-12 no-padding" id="maps-outer">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=WyEle7xRZkxRI1rwoUbhJWF0IYEtngIe&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

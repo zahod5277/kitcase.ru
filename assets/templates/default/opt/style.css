@@ -1,0 +1,175 @@
+body{
+    font-family:'Open Sans', sans-serif!important;
+    background: url('img/bg1.jpg') no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    width: 100%;
+    color:white!important;
+}
+
+.container{
+    padding-top:55px;
+}
+
+.phone{
+    font-size:3rem;
+    color:white;
+    margin-bottom:0px;
+}
+
+.email{
+    font-size:1.2rem;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: -15px;
+}
+
+.centered{
+    text-align:center;
+}
+
+h1{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    line-height: 3rem;
+    font-size:2.7rem
+}
+
+
+#videowrap{
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-10;
+}
+
+#videowrap video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#advant{
+    padding-left:0px!important;
+    padding-top:0px;
+    margin-top:-10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+}
+
+.no-padding{
+    padding:0px;
+}
+
+#advant li{
+    /*    list-style:normal;*/
+    padding-bottom: 20px;
+}
+
+.ajax_form{
+    padding: 30px 30px;
+    border:2px solid #fff;
+    border-radius:2px;
+}
+
+.ajax_form h2{
+    font-size: 1.3rem;
+    padding-bottom:10px;
+}
+
+.form-control{
+    background: rgba(255,255,255,0.8);
+    color:white;
+}
+
+.btn-lg{
+    width: 100%;
+    background: #ff973a;
+}
+
+@media(max-device-width:1024px){
+    body{
+        background-size:cover!important;
+        height: 100%;
+        width: 100%;
+    }
+
+    #videowrap{
+        display:none;
+    }
+
+    h1{
+        line-height: 2rem;
+        font-size: 1.7rem;
+    }
+
+    #advant{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding:15px!important;
+    }
+
+    #advant-outer{
+        padding:15px!important;
+    }
+
+    #form{
+        margin-bottom:50px;
+    }
+
+}
+
+@media(max-device-width:768px){
+    #logo-outer{
+        text-align:center;
+    }
+
+    #logo-outer img{
+     display:inline-block;   
+    }
+    
+    .phone{
+        font-size: 1.7rem;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+
+    .email{
+        font-size: 1.2rem;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 25px;
+        margin-top: 0px;
+    }
+}
+
+
+@media(min-device-width:769px) and (max-device-width:1024px){
+    .phone{
+    text-align: right;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    }
+
+    .email{
+        font-size: 1.2rem;
+        text-align: right;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+}
+
+.hidden{
+    display:none;
+}
