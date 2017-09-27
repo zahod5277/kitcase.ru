@@ -1,5 +1,5 @@
 <!doctype html>
-{extends 'file:templates/main.tpl'}
+{extends 'file:templates/base.tpl'}
 {block 'filter'}
 
 {/block}

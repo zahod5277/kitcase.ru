@@ -193,6 +193,10 @@ header {}
     background: #ffb675;
 }
 
+.main-menu-outer{
+    padding: 20px 0px;
+}
+
 .btn-nav {
     width: 90%;
     color: #585858;
@@ -651,7 +655,8 @@ margin-right: 0px;
 }
 
 #choice-outer{
-    display:none
+    display:none;
+    padding: 20px 0px;
 }
 
 .btn-reset{

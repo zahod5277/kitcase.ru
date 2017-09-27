@@ -11,12 +11,14 @@
     'minifyCss' => 1,
     'minifyJs' => 0,
     'registerCss' => 'default',
-    'cssSources' => 'assets/templates/default/bootstrap.min.css,
-        assets/templates/default/tether.min.css,
-        assets/templates/default/style.css,
-        assets/templates/default/media.css,
-        assets/templates/default/mobilemenu.css,
-        assets/templates/default/jquery.sidr.light.min.css'
+    'cssSources' => 'assets/templates/default/css/bootstrap.min.css,
+        assets/templates/default/css/tether.min.css,
+        assets/templates/default/css/slick.css,
+        assets/templates/default/css/slick-theme.css,
+        assets/templates/default/css/style.css,
+        assets/templates/default/css/media.css,
+        assets/templates/default/css/mobilemenu.css,
+        assets/templates/default/css/jquery.sidr.light.min.css'
     ])
     }
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"> 
