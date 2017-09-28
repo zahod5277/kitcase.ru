@@ -77,7 +77,13 @@
         left:0;
     }
     
-     .zoom-zoom{
+    .btn-nav-outer{
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .zoom-zoom{
         right:0px;
     }
     

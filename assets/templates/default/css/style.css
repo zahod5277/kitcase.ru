@@ -156,8 +156,9 @@ header {}
 
 #nav {
     background: #fff;
-    padding: 15px 0px 5px;
     text-align: center;
+    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .mobile-logo{
@@ -561,11 +562,13 @@ span.ta-right{
 }
 
 .model{
-    background: #F2F2F2;
+       background: #ffffff;
     border-radius: 5px;
     margin-right: 15px;
     margin-bottom: 15px;
-    display:block;
+    display: block;
+    font-weight: bold;
+    border: 1px solid #f39441;
     padding: 15px;
    -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;

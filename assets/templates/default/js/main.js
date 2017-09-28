@@ -62,7 +62,7 @@ var filter = {
         model: '#mse2_ms\\|model',
         tag: '#mse2_msoption\\|tags',
         reset: 'button[type="reset"]',
-        categoryParam: $('#mse2_mfilter[data-filter]').data('category'),
+        categoryParam: $('#mse2_mfilter[data-category]').data('category'),
         vendorParam: $('#mse2_mfilter[data-vendor]').data('vendor'),
         cancelModel: $('i.cancel')
     },
@@ -70,12 +70,18 @@ var filter = {
         //базовые переменные
         $this = this;
         if (window.location.href !== 'https://kitcase.ru/') {
+            console.log($this.options.categoryParam);
+            if ($this.options.categoryParam == '26'){
+                $this.hideVendor();
+                $this.showTags();
+            } else {
             var hash = mSearch2.Hash.get();
             if ((hash['vendor']) || (hash['model']) || (hash['tags'])) {
                 mSearch2.submit();
             } else if ($this.options.vendorParam != '') {
                 mSearch2.Hash.add('vendor', $this.options.vendorParam);
                 $this.work();
+            }
             }
         }
     },
@@ -108,6 +114,10 @@ var filter = {
         $($this.options.vendor).find('label').removeClass('disabled');
         $($this.options.vendor).find('input:not([value=' + param + '])').parents('label').addClass('disabled');
     },
+    hideVendor: function(){
+        $($this.options.vendor).hide();
+        $this.showTags();
+    },
     selectModel: function (param) {
         param = param.split(',');
         $($this.options.model).find($this.options.cancelModel).hide();
@@ -124,21 +134,30 @@ var filter = {
         $('#choice-outer').show();
     },
     setTitle: function (hashUrl) {
-        var v = $(this.options.vendor).find('input[value="' + hashUrl['vendor'] + '"]').data('check'),
-                m = $(this.options.model).find('input[value="' + hashUrl['model'] + '"]'),
-                c = $('.btn-nav-active').html(),
-                models = '';
+        var v = '',m = '',c = '', models = '';
+        if ($('input').is('[value="' + hashUrl['vendor'] + '"]')){
+            v = $($this.options.vendor).find('input[value="' + hashUrl['vendor'] + '"]').data('check');
+        }
+        if ($('input').is('[value="' + hashUrl['model'] + '"]')){
+            m = $($this.options.model).find('input[value="' + hashUrl['model'] + '"]');
+        }
+        if ($('a').is('.btn-nav-active')){
+            c = $('.btn-nav-active').html();
+        }
         if (m.length > 0) {
             for (var i = 0; i < m.length; i++) {
-                if ($(m[i]).val() != 'undefined') {
+                if ($(m[i]).val() !== 'undefined') {
                     models += $(m[i]).val() + ' ';
                 } else {
                     models += '';
                 }
             }
         }
-        c ? c : '';
-        v ? v : '';
+        if (c !== ''){
+            console.log('undef!');
+        }
+        c ? c : ''; (c!=='undefined') ? c: '';
+        v ? v : ''; (v!=='undefined') ? v: '';
         var title = c + ' ' + v + ' ' + models;
         $('title').text(title);
         $('.maintitle').html(title);
