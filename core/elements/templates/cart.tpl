@@ -75,42 +75,9 @@
             <p class="marginbottom0px">ИП Каширин Дмитрий Андреевич ОГРНИП 314504005600070 ИНН 504022007956</p>
         </div>
     </div>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter37203930 = new Ya.Metrika({
-                        id: 37203930,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
-                    });
-                } catch (e) {
-                }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                    s = d.createElement("script"),
-                    f = function () {
-                        n.parentNode.insertBefore(s, n);
-                    };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <!-- /Yandex.Metrika counter -->
 {/block}
 {block 'scripts'}
-    {include 'file:chunks/scripts.tpl'}
+    {include 'file:chunks/common/scripts.tpl'}
     {ignore}
     <script>
         //так себе скрипт для сокрытия не нужных полей

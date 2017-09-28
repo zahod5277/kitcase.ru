@@ -6,7 +6,7 @@
                 {if $_modx->resource.id==1}
                     {var $class = ' main-menu-outer'}
                 {/if}
-                <div class="hidden-lg-down parents-filter-outer{$class}">
+                <div class="parents-filter-outer{$class}">
                     {$_modx->runSnippet('pdoMenu',[
                         'parents' => 0,
                         'level' => 1,

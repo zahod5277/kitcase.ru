@@ -1,7 +1,7 @@
 {extends 'file:templates/base.tpl'}
 {block 'content'}
-    {include 'file:chunks/main/slider.tpl'}
     {include 'file:chunks/main/mainMenu.outer.tpl'}
+    {include 'file:chunks/main/slider.tpl'}
 {/block}
 {block 'filter'}
     <div class="col-xs-12 no-padding" id="products-row">
