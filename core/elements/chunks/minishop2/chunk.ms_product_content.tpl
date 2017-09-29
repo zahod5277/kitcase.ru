@@ -35,15 +35,17 @@
                     <input type="hidden" name="count" id="product_price" class="input-sm form-control" value="1"/>
                 </div>
             </form>
-                    <div class="col-xs-12 no-padding short-delivery">
-                        <p><a class="smooth" href="{$_modx->makeUrl($_modx->resource.id)}#contacts">Забрать в магазине</a> - бесплатно</p>
-                        <p><a class="smooth" href="{$_modx->makeUrl($_modx->resource.id)}#delivery" title="Доставка чехлов и аксессуаров для мобильных устройств в Москве">Доставка по Москве</a> <span>290 руб.</span></p>
-                        <p><a class="smooth" href="{$_modx->makeUrl($_modx->resource.id)}#delivery" title="Доставка чехлов и аксессуаров для мобильных устройств по России">Доставка по России</a> <span>290 руб.</span></p>
-                    </div>
+            <div class="col-xs-12 no-padding short-delivery">
+                <p><a class="smooth" href="{$_modx->makeUrl($_modx->resource.id)}#contacts">Забрать в магазине</a> - бесплатно</p>
+                <p><a class="smooth" href="{$_modx->makeUrl($_modx->resource.id)}#delivery" title="Доставка чехлов и аксессуаров для мобильных устройств в Москве">Доставка по Москве</a> <span>290 руб.</span></p>
+                <p><a class="smooth" href="{$_modx->makeUrl($_modx->resource.id)}#delivery" title="Доставка чехлов и аксессуаров для мобильных устройств по России">Доставка по России</a> <span>290 руб.</span></p>
+            </div>
         </div>
-        <div class="col-xs-12 col-lg-6 no-padding">
+        {if $_modx->resource.content?}
+            <div class="col-xs-12 col-lg-6 no-padding">
                 <h2>Описание товара</h2>
                 {$_modx->resource.content}
             </div>            
+        {/if}
     </div>
 </div>

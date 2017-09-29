@@ -8,7 +8,7 @@
         <div class="col-xs-12 offset-lg-1 col-lg-11">
             <h3 class="title maintitle">
                 {if $_modx->resource.id == 1}
-                    Последние поступления
+                    Хиты продаж
                 {else}
                     {$_modx->resource.pagetitle}
                 {/if}
@@ -23,6 +23,8 @@
                 'tplOuter' => '@FILE chunks/msearch2/chunk.mfilter2.outer2.tpl',
                 'limit' => '20',
                 'ajaxMode' => 'button',
+                'ajaxHistory' => 1,
+                'where' => '{"Data.popular:=":"1"}',
                 'tpl' => '@FILE chunks/category/products_row.tpl',
             ])}
         </div>

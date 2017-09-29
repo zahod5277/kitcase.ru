@@ -8,8 +8,6 @@
     
     .new_price{
         font-size: 1em;
-/*        position: absolute;
-        top: 18px;*/
     }
     
     .old_price{
@@ -17,8 +15,8 @@
     }
     
     .mobile-logo{
-    width: 50px;
-    height: 50px;
+        width: 50px;
+        height: 50px;
     }
     
     .to-cart-btn {
@@ -51,9 +49,12 @@
     font-size: 0.7rem;
     }
     
+    .input-group-btn{
+        top:23px;
+    }
+    
 }
 
-/*Общие для всех устройств*/
 @media(min-device-width:200px) and (max-device-width:992px){
     header{
         padding-top:16px;
@@ -143,15 +144,16 @@
     }
     
     .cart-product-price{
-        font-size: 2rem;
+        font-size: 1.45rem;
     }
     
     .cart-product-title{
-        font-size:1.5rem
+        font-size:1rem
     }
     
     .product-title{
         min-height: 104px;
+        max-height: 104px;
     }
     
     .cart-product-count-outer,.cart-product-clear{
@@ -166,6 +168,10 @@
         font-size: 0.8em;
         padding: 0px;
         top: 5px;
+    }
+    
+    .cart-title{
+        padding-left: 15px;
     }
     
 }
@@ -287,6 +293,21 @@
         display: none;
     }
     
+}
+
+/*Общие для всех устройств*/
+@media(orientation:landscape) and (max-device-width:992px){
+    header{
+        max-height: 75px;
+    }
+    
+    #menu-btn{
+        font-size: 1rem;
+    }
+    
+    #logo{
+        max-height: 50px;
+    }
 }
 
 /*iPad и ему подобные*/
@@ -580,6 +601,7 @@ box-shadow: 0px 6px 10px 1px rgba(192,192,192,1);
     
     .product-title{
        min-height: 55px;
+       max-height: 55px;
     }
     
     #order-delivery-payment{

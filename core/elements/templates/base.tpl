@@ -30,6 +30,7 @@
                         'tplFilter.outer.tags' => '@FILE chunks/msearch2/tag-outer.tpl',
                         'tplFilter.row.tags' => '@FILE chunks/msearch2/tag-row.tpl',
                         'limit' => '20',
+                        'ajaxHistory' => 1,
                         'suggestionsMaxFilters' => '5000',
                         'suggestionsMaxResults' => '5000',
                         'suggestionsRadio' => 'ms|model,ms|vendor,resource|parent',

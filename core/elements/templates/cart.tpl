@@ -9,7 +9,7 @@
 {block 'content'}
     <div class="hidden-md-down col-lg-1"></div>
     <div class="col-xs-12 col-lg-10 no-padding" id="product-content">
-        <h1>{$_modx->resource.pagetitle}</h1>
+        <h1 class="cart-title">{$_modx->resource.pagetitle}</h1>
         {$_modx->runSnippet('!msCart',['tpl' => '@FILE:chunks/cart/cart.tpl'])}
         {$_modx->runSnippet('!msOrder',['tpl' => '@FILE:chunks/cart/order_backup.tpl'])}
         {$_modx->runSnippet('!msGetOrder', ['tpl' => '@FILE: chunks/cart/getorder.tpl'])}

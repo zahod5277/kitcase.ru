@@ -10,6 +10,14 @@ var App = {
     },
     mainSlick: function () {
         $('.slick-js').slick({
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                      arrows: false  
+                    },
+                }
+            ]
         });
     },
     smoothScroll: function () {
