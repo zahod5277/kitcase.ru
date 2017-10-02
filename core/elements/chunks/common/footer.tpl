@@ -41,7 +41,7 @@
                 <span itemprop="name" class="hidden">Kitcase.ru. Аксессуары для мобильных устройств</span>
                 <div class="col-xs-12 col-md-4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                     <p itemprop="addressLocality">г. Москва</p>
-                    <p itemprop="streetAddress">Бульвар Дмитрия Донского, ТЦ "Северное сияние", 1 этаж</p>
+                    <p itemprop="streetAddress">Бульвар Дмитрия Донского, д. 1, ТЦ "Северное сияние", 1 этаж</p>
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <p class="centered">10:00 - 22:00 без выходных</p>

@@ -8,13 +8,10 @@
                 <li><i class="fa fa-truck"></i> Доставку вовремя</li>
             </ul>
         </div>
-        <div class="col-xs-12 col-lg-8 no-padding slick-js" id="banner">
-            <div>
-                <img src="{$_modx->config.assets_url}templates/default/img/slider-example2.jpg" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="{$_modx->config.assets_url}templates/default/img/slider-example3.jpg" alt="" class="img-fluid">
-            </div>
-        </div>
+        {$_modx->runSnippet('BannerY',[
+            'position' => 1,
+            'tplWrapper' => '@FILE:chunks/main/slider.outer.tpl',
+            'tpl' => '@FILE:chunks/main/slider.row.tpl'
+        ])}
         <div class="hidden-xs col-lg-1"></div>
     </div>

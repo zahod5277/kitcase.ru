@@ -10,6 +10,8 @@ var App = {
     },
     mainSlick: function () {
         $('.slick-js').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -79,7 +81,7 @@ var filter = {
         $this = this;
         if (window.location.href !== 'https://kitcase.ru/') {
             console.log($this.options.categoryParam);
-            if ($this.options.categoryParam == '26'){
+            if (($this.options.categoryParam == '26')||($this.options.categoryParam == '25')){
                 $this.hideVendor();
                 $this.showTags();
             } else {

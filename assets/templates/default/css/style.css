@@ -236,7 +236,8 @@ header {}
 }
 
 .slider{
-    margin:30px 0px;
+    background: #fff;
+    padding: 20px 0px 40px;
 }
 
 .marginbottom20px{
